@@ -22,11 +22,14 @@ const Art = (props: iRoute) =>  {
   </div>
 }
 const Tech = (props: iRoute) =>  {
-  const TechHome = (props: iRoute) => <div className="TechHome">TechHome</div>
+  const TechHome = (props: iRoute) => <div className="TechHome">
+    <button className="TechHomeLeft">Left</button>
+    <button className="TechHomeRight">Right</button>
+  </div>
   const Writing = (props: iRoute) => <div className="Writing">Writing</div>
   const Development = (props: iRoute) => <div className="Development">Development</div>
-  return <div className="Art">
-    Art
+  return <div className="Tech">
+    Tech
     <Router basepath="tech">
       <TechHome path="/" />
       <Writing path="writing" />

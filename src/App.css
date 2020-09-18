@@ -1,3 +1,9 @@
+
+button {
+  cursor: pointer;
+  border: none;
+  
+}
 .App {
   text-align: center;
 }
@@ -32,5 +38,22 @@
 .Main {
   height: 1800px;
   background-color: #f4f41496;
-  padding-top: 30px;
+  padding: 30px 100px;
+}
+.Tech {
+  background-color: rgb(122, 122, 245);
+}
+.TechHome {
+  display: flex;
+  justify-content: space-between;
+}
+.TechHome button {
+  /* border: 1px solid rebeccapurple; */
+  width: 100%;
+}
+.TechHome button:hover {
+  background-color: yellow;
+}
+.Art {
+  background-color: rgb(236, 160, 173);
 }
