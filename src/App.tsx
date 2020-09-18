@@ -4,6 +4,8 @@ import { Link, Router } from '@reach/router'
 
 import './App.css'
 
+import joe_pesci from './images/joe_pesci.jpg'
+
 interface iRoute {
   path: string
 }
@@ -38,6 +40,11 @@ const Tech = (props: iRoute) =>  {
   </div>
 }
 const App = () => {
+  return <div className="App">
+    <img src={joe_pesci} alt="" />
+  </div>
+}
+const Inprogress = () => {
   const MainHome = (props: iRoute) => <div className="MainHome">MainHome</div>
   return  <div className="App">
     <header className="Header">
