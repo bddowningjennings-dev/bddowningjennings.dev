@@ -41,7 +41,8 @@ const Tech = (props: iRoute) =>  {
 }
 const App = () => {
   return <div className="App">
-    <img src={joe_pesci} alt="" />
+    <h2>More Joe Pesci images to come!</h2>
+    <img src={joe_pesci} alt="Joe Pesci looking fresh-y" />
   </div>
 }
 const Inprogress = () => {
