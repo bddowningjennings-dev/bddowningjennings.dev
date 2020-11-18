@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="shortcut icon" href="assets/icon.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Karla" rel="stylesheet"> 
+  <link rel="stylesheet" href="style.css">
+  
+  <title>Blane Downing-Jennings</title>
+
+</head>
+<body onclick="hoverNonPortrait(event)">
+  <header id='header_nav'>
+    <div class="left_header"></div>
+    <h2>
+      <img id='here' src="assets/you_here.jpg" alt="" srcset="">
+      Blane Downing-Jennings: Stuff and Things
+    </h2>
+    <nav>
+      <a href="#anchor_about_me" onclick="(function() {event.preventDefault(); document.getElementById('anchor_about_me').scrollIntoView(true)})();">About</a>
+      <a href="#anchor_resume" onclick="(function() {event.preventDefault(); document.getElementById('anchor_resume').scrollIntoView(true)})(); clickResume();">Resume</a>
+      <a href="#anchor_projects" onclick="(function() {event.preventDefault(); document.getElementById('anchor_projects').scrollIntoView(true)})();">Projects</a>
+      <a href="#anchor_contact" onclick="(function() {event.preventDefault();})(); clickGato(); (function() {document.getElementById('anchor_contact').scrollIntoView(true);})();">+ Gato</a>
+    </nav>
+  </header>
+  <div id="nav_spacer"></div>
+  <div class="wrapper" id="wrapper">
+    <main id='main'>
+      <section id='welcome'>
+        <div class="portraits">
+            <img id='portrait' src="assets/me.jpg" alt="" srcset="" onclick="(function() {event.stopPropagation();})(); hoverPortrait()">
+        </div>
+        <div id="portrait_label" class="portrait_label">
+          <img src="assets/red_arrow.svg" alt="" srcset="">
+          <h1>Hi, that's my face!</h1>
+        </div>
+        <h3>
+          <span>I'm a problem solver and <em>solution</em> developer </span> <br>
+          <span id="phrase"></span>
+          <span id="spacer" class="spacer"></span>
+        </h3>
+
+      </section>
+      <span class="anchor" id="anchor_about_me"></span>
+      <section id='about_me' class="card">
+        <div class="underline"></div>
+        <h1>About Me</h1>
+        <div class="card content">
+          <p>
+            `The magic is in the person, not the tech!` <- Yes! This!
+          </p>
+          <p>
+            My name is Blane Downing-Jennings and I am a Mathematician/Full-Stack Developer.
+            Currently, I'm looking to answer new employment opportunities and help resolve new challenges. My objective is to obtain the position that allows me to solve problems, challenges me to constantly be improving and learning and also allows me to be the warm and humorous, best version of myself.
+          </p>
+          <p>
+              I am eager to work in an environment which recognizes potential and encourages growth and humility.
+              The most important thing for me as an employee is receiving the support to grow individually while being part of a larger whole, working toward a cause/product that I believe in.
+              I bring to my teams an infinite drive and support for learning/communicating and earnest enthusiasm for understanding problems & finding solid, thought-out solutions.
+              Plus, I just love solving problems and making useful tools! When given the chance, I truly know my unique attitude and contributions amount to a tremendous value!
+          </p>
+        </div>
+      </section>
+
+      <span class="anchor" id="anchor_resume"></span>
+      <section id='resume_section' class="card">
+        <div class="underline"></div>
+        <h1>Resume</h1>
+        <div class="card content">
+            Here's an abridged outline of my skills, work history, and education.<br>
+            <section id="resume" class="hoverable card-panel">
+              <img id="resume_pdf" src="assets/bddowningjennings_resume.jpg"></img>
+            </section>
+            <div id="download"> 
+              <div class="btn">
+                <a href="assets/bddowningjennings_resume.pdf" download="">Download my Resume</a> 
+              </div>
+            </div>
+        </div>
+      </section>
+
+      <span class="anchor" id="anchor_projects"></span>
+      <section id='projects' class="card">
+          <div class="underline"></div>
+          <h1>Pretty Old Sample Projects</h1>
+          <div class="card content"></div>
+        <div id="projects_container">
+          <div id="worx" class="project card hoverable">
+            W O R X
+              <div class="underline"></div>
+              <img src="assets/worx.jpg" width="100%" alt="" srcset="">              
+          </div>
+          <div id="ysfs" class="project card hoverable">
+            Your Stuff 4 Sale
+              <div class="underline"></div>
+              <img src="assets/ysfs.png" width="100%" alt="" srcset="">               
+          </div>
+          <!-- <div class="card hoverable">
+              <div class="underline"></div>
+          </div> -->
+        </div>
+      </section>
+  
+    </main>
+  </div>
+  <span class="" id="anchor_contact"></span>  
+  <footer>
+    <br>
+    <h3>Remove a picture of a cat?</h3><br>
+    <button id="btn_remove_gato" class="empty">Yes, please!!</button>
+    <div class="social_label">
+        <!-- <img src="assets/red_arrow.svg" alt="" srcset="">   -->
+        <!-- <h3>Here are some of my profiles...</h3> -->
+    </div>
+    <div class="social_links">
+      <div class="spacer"></div>
+      <!-- <a href="#" class="fa fa-facebook"></a>
+      <a href="#" class="fa fa-linkedin"></a>
+      <a href="#" class="fa fa-github"></a> -->
+      <div class="spacer"></div>      
+    </div>
+    <div class="bottom"></div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

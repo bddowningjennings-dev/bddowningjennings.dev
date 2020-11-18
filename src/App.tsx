@@ -6,6 +6,8 @@ import './App.css'
 
 import joe_pesci from './images/joe_pesci.jpg'
 
+const resume_page = 'https://bddowningjennings.dev/advertisement'
+
 interface iRoute {
   path: string
 }
@@ -42,11 +44,17 @@ const Tech = (props: iRoute) =>  {
 const App = () => {
   return <div className="App">
     <h2>More Joe Pesci images to come!</h2>
-    <img src={joe_pesci} alt="Joe Pesci looking fresh-y" />
+    <img id="pesci_pic" onClick={() => window.location.href=resume_page} src={joe_pesci} alt="Joe Pesci looking fresh-y" />
+    <div className="resume_row">
+      <div className="left" />
+      <a id="resume_link" href={resume_page}>
+        <button>{`Resume >>`}</button>
+      </a>
+    </div>
   </div>
 }
+const MainHome = (props: iRoute) => <div className="MainHome">MainHome</div>
 const Inprogress = () => {
-  const MainHome = (props: iRoute) => <div className="MainHome">MainHome</div>
   return  <div className="App">
     <header className="Header">
       <nav className="Navbar">

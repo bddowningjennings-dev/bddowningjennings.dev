@@ -2,15 +2,18 @@
 button {
   cursor: pointer;
   border: none;
-
-}.App {
+}
+.App {
 	text-align: center;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 	height: 100vh;
-	width: 100vw;
+  width: 100vw;
+}
+.Header {
+  width: 100%;
 }
 .Navbar {
 	display: flex;
@@ -18,6 +21,7 @@ button {
 	justify-content: space-between;
 	background-color: #f9f9ee;
   height: 80px;
+  width: 100%;
 }
 .Navbar a {
 	display: flex;
@@ -61,4 +65,17 @@ button {
 }
 .Art {
   background-color: rgb(236, 160, 173);
+}
+#resume_link button {
+  padding: 10px 20px;
+}
+#pesci_pic {
+  cursor: pointer;
+}
+.resume_row {
+  /* outline: 1px dashed red; */
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
