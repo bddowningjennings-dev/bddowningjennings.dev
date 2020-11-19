@@ -66,7 +66,7 @@ button {
 .Art {
   background-color: rgb(236, 160, 173);
 }
-#resume_link button {
+.resume_link button {
   padding: 10px 20px;
 
 }
@@ -105,21 +105,53 @@ button {
 	-moz-animation-timing-function: linear;
 	-moz-animation-iteration-count: infinite;
 }
-
 @keyframes flash {  
     0% { opacity: 1.0; }
     50% { opacity: 0.5; }
     100% { opacity: 1.0; }
 }
-
 @-webkit-keyframes flash {  
     0% { opacity: 1.0; }
     50% { opacity: 0.5; }
     100% { opacity: 1.0; }
 }
-
 @-moz-keyframes flash {  
     0% { opacity: 1.0; }
     50% { opacity: 0.5; }
     100% { opacity: 1.0; }
+}
+/* quick reset */
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+/* relevant styles */
+.img__wrap {
+  position: relative;
+  height: 200px;
+  width: 257px;
+}
+.img__description {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(29, 106, 154, 0.72);
+  color: #fff;
+  visibility: hidden;
+  opacity: 0;
+
+  /* transition effect. not necessary */
+  transition: opacity .2s, visibility .2s;
+}
+.img__wrap:hover .img__description {
+  visibility: visible;
+  opacity: 1;
+}
+#under-construction {
+  height: 35px;
+  width: 35px;
+  margin-right: 10px;
 }

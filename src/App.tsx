@@ -5,6 +5,7 @@ import { Link, Router } from '@reach/router'
 import './App.css'
 
 import joe_pesci from './images/joe_pesci.jpg'
+import gif from './images/old-under-construction.gif'
 
 const resume_page = 'https://bddowningjennings.dev/advertisement'
 
@@ -43,7 +44,10 @@ const Tech = (props: iRoute) =>  {
 }
 const App = () => {
   return <div className="App">
-    <h2>More Joe Pesci images to come!</h2>
+    <h2>
+      <img src={gif} alt="old-under-construction" id="under-construction" />
+      More Joe Pesci images to come!
+    </h2>
     <img id="pesci_pic" onClick={() => window.location.href=resume_page} src={joe_pesci} alt="Joe Pesci looking fresh-y" />
     <div className="resume_row">
       <div className="left" />
