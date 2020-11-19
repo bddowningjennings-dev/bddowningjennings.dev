@@ -48,7 +48,7 @@ const App = () => {
     <div className="resume_row">
       <div className="left" />
       <a id="resume_link" href={resume_page}>
-        <button>{`Resume >>`}</button>
+        <button className="flash-button">{`Resume >>`}</button>
       </a>
     </div>
   </div>
