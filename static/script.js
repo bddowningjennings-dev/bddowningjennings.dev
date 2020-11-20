@@ -77,7 +77,7 @@ const phraseFactory = () => {
     }
   };
   let shufflePhrases = (num = 1) => {
-    for ( let round in Array(num).fill()) {
+    for (let round in Array(num).fill()) {
       for (let order in tidbits) {
         let indx = Math.floor(Math.random() * (tidbits.length - order));
         tidbits.push(tidbits[indx]);
