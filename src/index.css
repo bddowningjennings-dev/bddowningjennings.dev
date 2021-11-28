@@ -11,3 +11,39 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+.ccm-main {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  padding-top: 30px;
+  padding-bottom: 80px;
+  background-color: rgb(241, 241, 238);
+}
+.ccm-job-title {
+  margin-bottom: 20px;
+  text-align: center;
+}
+.ccm-body {
+  width: 60%;
+}
+@media screen and (max-width: 1000px) {
+  .ccm-body {
+    width: 90%;
+  }
+}
+.ccm-paragraph {
+  margin-bottom: 10px;
+  text-indent: 25px;
+}
+.ccm-strengths {
+  margin-bottom: 10px;
+}
+.ccm-tldr {
+  margin-bottom: 2px;
+  font-weight: bold;
+}
+.bold {
+  font-weight: bold;
+}
