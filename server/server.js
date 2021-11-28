@@ -15,6 +15,9 @@ app.get('/advertisement', (req, res) => {
 app.get('/', (req, res) => {
     return res.status(200).sendFile(path.join(__dirname, '../build/index.html'))
 })
+app.get('/ccm', (req, res) => {
+    return res.status(200).sendFile(path.join(__dirname, '../build/index.html'))
+})
 app.get('*', (req, res) => {
     return res.redirect('/')
 })
